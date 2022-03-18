@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="MiClaro(failed)">
+    <classes>
+      <class name="test.Login">
+        <methods>
+          <include name="TearDown"/>
+          <include name="SetUp"/>
+          <include name="LoginMiClaro"/>
+          <include name="ExistForm"/>
+        </methods>
+      </class> <!-- test.Login -->
+      <class name="test.OnBoarding">
+        <methods>
+          <include name="beforeTestPolicicas"/>
+          <include name="TearDown"/>
+          <include name="SetUp"/>
+          <include name="Ubicacion"/>
+          <include name="BeforeUbicacion"/>
+          <include name="AfterTestPolicitas"/>
+          <include name="PoliticasAcceso"/>
+        </methods>
+      </class> <!-- test.OnBoarding -->
+    </classes>
+  </test> <!-- MiClaro(failed) -->
+</suite> <!-- Failed suite [Suite] -->

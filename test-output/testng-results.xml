@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="8" total="14" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-03-18T22:43:32Z" name="MiClaro" finished-at="2022-03-18T22:43:32Z" duration-ms="68">
+    <groups>
+      <group name="Boarding-2">
+        <method signature="OnBoarding.Ubicacion()[pri:2, instance:test.OnBoarding@1224144a]" name="Ubicacion" class="test.OnBoarding"/>
+        <method signature="OnBoarding.Ubicacion()[pri:2, instance:test.OnBoarding@24105dc5]" name="Ubicacion" class="test.OnBoarding"/>
+      </group> <!-- Boarding-2 -->
+      <group name="Boarding-1">
+        <method signature="OnBoarding.PoliticasAcceso()[pri:1, instance:test.OnBoarding@1224144a]" name="PoliticasAcceso" class="test.OnBoarding"/>
+        <method signature="OnBoarding.PoliticasAcceso()[pri:1, instance:test.OnBoarding@24105dc5]" name="PoliticasAcceso" class="test.OnBoarding"/>
+      </group> <!-- Boarding-1 -->
+      <group name="Login-1">
+        <method signature="Login.LoginMiClaro(java.lang.String, java.lang.String)[pri:3, instance:test.Login@f58853c]" name="LoginMiClaro" class="test.Login"/>
+        <method signature="Login.LoginMiClaro(java.lang.String, java.lang.String)[pri:3, instance:test.Login@2438dcd]" name="LoginMiClaro" class="test.Login"/>
+      </group> <!-- Login-1 -->
+    </groups>
+    <test started-at="2022-03-18T22:43:32Z" name="NI" finished-at="2022-03-18T22:43:32Z" duration-ms="23">
+      <class name="test.OnBoarding">
+        <test-method is-config="true" signature="beforeTestPoliticas()[pri:0, instance:test.OnBoarding@1224144a]" started-at="2022-03-18T22:43:32Z" name="beforeTestPoliticas" finished-at="2022-03-18T22:43:32Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestPoliticas -->
+        <test-method signature="PoliticasAcceso()[pri:1, instance:test.OnBoarding@1224144a]" started-at="2022-03-18T22:43:32Z" name="PoliticasAcceso" finished-at="2022-03-18T22:43:32Z" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PoliticasAcceso -->
+        <test-method is-config="true" signature="AfterTestPoliticas()[pri:0, instance:test.OnBoarding@1224144a]" started-at="2022-03-18T22:43:32Z" name="AfterTestPoliticas" finished-at="2022-03-18T22:43:32Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTestPoliticas -->
+        <test-method is-config="true" signature="BeforeUbicacion()[pri:0, instance:test.OnBoarding@1224144a]" started-at="2022-03-18T22:43:32Z" name="BeforeUbicacion" finished-at="2022-03-18T22:43:32Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeUbicacion -->
+        <test-method signature="Ubicacion()[pri:2, instance:test.OnBoarding@1224144a]" started-at="2022-03-18T22:43:32Z" name="Ubicacion" finished-at="2022-03-18T22:43:32Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Ubicacion -->
+      </class> <!-- test.OnBoarding -->
+      <class name="test.Login">
+        <test-method signature="LoginMiClaro(java.lang.String, java.lang.String)[pri:3, instance:test.Login@f58853c]" started-at="2022-03-18T22:43:32Z" name="LoginMiClaro" finished-at="2022-03-18T22:43:32Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[scarmelendez@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Eloyscar4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginMiClaro -->
+        <test-method is-config="true" signature="ExistForm()[pri:0, instance:test.Login@f58853c]" started-at="2022-03-18T22:43:32Z" name="ExistForm" finished-at="2022-03-18T22:43:32Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExistForm -->
+      </class> <!-- test.Login -->
+    </test> <!-- NI -->
+    <test started-at="2022-03-18T22:43:32Z" name="HN" finished-at="2022-03-18T22:43:32Z" duration-ms="5">
+      <class name="test.OnBoarding">
+        <test-method signature="PoliticasAcceso()[pri:1, instance:test.OnBoarding@24105dc5]" started-at="2022-03-18T22:43:32Z" name="PoliticasAcceso" finished-at="2022-03-18T22:43:32Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PoliticasAcceso -->
+        <test-method is-config="true" signature="beforeTestPoliticas()[pri:0, instance:test.OnBoarding@24105dc5]" started-at="2022-03-18T22:43:32Z" name="beforeTestPoliticas" finished-at="2022-03-18T22:43:32Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestPoliticas -->
+        <test-method is-config="true" signature="AfterTestPoliticas()[pri:0, instance:test.OnBoarding@24105dc5]" started-at="2022-03-18T22:43:32Z" name="AfterTestPoliticas" finished-at="2022-03-18T22:43:32Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTestPoliticas -->
+        <test-method is-config="true" signature="BeforeUbicacion()[pri:0, instance:test.OnBoarding@24105dc5]" started-at="2022-03-18T22:43:32Z" name="BeforeUbicacion" finished-at="2022-03-18T22:43:32Z" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeUbicacion -->
+        <test-method signature="Ubicacion()[pri:2, instance:test.OnBoarding@24105dc5]" started-at="2022-03-18T22:43:32Z" name="Ubicacion" finished-at="2022-03-18T22:43:32Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Ubicacion -->
+      </class> <!-- test.OnBoarding -->
+      <class name="test.BaseClass">
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:test.BaseClass@7975d1d8]" started-at="2022-03-18T22:43:32Z" name="SetUp" finished-at="2022-03-18T22:43:32Z" duration-ms="215" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:test.BaseClass@7975d1d8]" started-at="2022-03-18T22:43:32Z" name="TearDown" finished-at="2022-03-18T22:43:32Z" duration-ms="1" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "io.appium.java_client.AppiumDriver.close()" because "this.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "io.appium.java_client.AppiumDriver.close()" because "this.driver" is null
+at test.BaseClass.TearDown(BaseClass.java:85)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:425)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- test.BaseClass -->
+      <class name="test.Login">
+        <test-method signature="LoginMiClaro(java.lang.String, java.lang.String)[pri:3, instance:test.Login@2438dcd]" started-at="2022-03-18T22:43:32Z" name="LoginMiClaro" finished-at="2022-03-18T22:43:32Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[scarmelendez@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Eloyscar4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginMiClaro -->
+        <test-method is-config="true" signature="ExistForm()[pri:0, instance:test.Login@2438dcd]" started-at="2022-03-18T22:43:32Z" name="ExistForm" finished-at="2022-03-18T22:43:32Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExistForm -->
+      </class> <!-- test.Login -->
+    </test> <!-- HN -->
+  </suite> <!-- MiClaro -->
+</testng-results>

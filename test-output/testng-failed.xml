@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [MiClaro]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="PoliticasAcceso(failed)">
+    <parameter name="password" value="Eloyscar4"/>
+    <parameter name="email" value="scarmelendez@gmail.com"/>
+    <classes>
+      <class name="test.Login">
+        <methods>
+          <include name="TearDown"/>
+          <include name="SetUp"/>
+          <include name="LoginMiClaro" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- test.Login -->
+      <class name="test.OnBoarding">
+        <methods>
+          <include name="TearDown"/>
+          <include name="SetUp"/>
+          <include name="Ubicacion"/>
+          <include name="PoliticasAcceso"/>
+        </methods>
+      </class> <!-- test.OnBoarding -->
+    </classes>
+  </test> <!-- PoliticasAcceso(failed) -->
+</suite> <!-- Failed suite [MiClaro] -->
