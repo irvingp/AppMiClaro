@@ -12,14 +12,15 @@ import org.testng.annotations.BeforeSuite;
 
 
 
-import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
+import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
 
 
 public class BaseClass {
 
-	AppiumDriver<MobileElement> driver;
+	
+	AndroidDriver<MobileElement> Android;
 		
 	@BeforeSuite
 	public void SetUp()
@@ -37,12 +38,12 @@ public class BaseClass {
 		
 		//caps.setCapability(MobileCapabilityType.BROWSER_NAME, "Chrome");
 		caps.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 60);
-		caps.setCapability("appPackage", "com.claro.miclaro");	
-		caps.setCapability("appActivity", "com.claro.app.login.LoginVC");
+		caps.setCapability("appPackage", "com.claro.miclaro");
+		caps.setCapability("appActivity", "com.claro.miclaro.view.SplashKTVC");
 		
 		URL url = new URL("http://127.0.0.1:4723/wd/hub");
 		
-		driver = new AppiumDriver<MobileElement>(url, caps);
+		Android = new AndroidDriver<MobileElement>(url, caps);
 		
 		}catch(Exception ex)
 		{
@@ -58,23 +59,17 @@ public class BaseClass {
 	}
 	
 	
-	public  boolean WaitToClik(String targetResourceXpath, long timeLimitInSeconds)
+	public void WaitToClik(AndroidDriver<MobileElement> Android, String targetResourceXpath , long timeLimitInSeconds)
 	{
-		boolean exist = false;
 		try {
-			MobileElement mobileElement =   driver.findElement(By.xpath(targetResourceXpath));
-			WebDriverWait wait = new WebDriverWait(driver, timeLimitInSeconds);
-			wait.until(ExpectedConditions.visibilityOf(mobileElement));
-			exist = mobileElement.isDisplayed();
-			return exist;
-		} catch (Exception ex) {				
 			
+			WebDriverWait wait = new WebDriverWait(Android, timeLimitInSeconds);
+			wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(targetResourceXpath)));
+			
+		} catch (Exception ex) {	
 			  System.out.println("Message is: " + ex.getMessage());
 			  System.out.println("Cause is: " + ex.getCause());
-			  System.out.println(ex.getStackTrace());
-			 
-			 
-			return exist;
+			  System.out.println(ex.getStackTrace());			
 		}
 	}
 	
@@ -82,8 +77,8 @@ public class BaseClass {
 	public void TearDown()
 	{
 		System.out.println("After Suit");
-		driver.close();
-		driver.quit();
+		Android.close();
+		Android.quit();
 		
 	}
 	

@@ -1,8 +1,9 @@
 package test;
 
 import org.testng.annotations.BeforeGroups;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
+
+import providers.LoginProvider;
 
 /*
  *  
@@ -19,21 +20,21 @@ public class Login extends BaseClass{
 		//WaitToClik("//android.widget.Button[1]", 5);
 	}
 
-	@Parameters({"email","password"})
-	@Test(priority=3, groups = {"Login-1"})
+	//@Parameters({"email","password"})
+	@Test(priority=3, groups = {"Login-1"}, dataProvider = "DataLogin", dataProviderClass = LoginProvider.class)
 	public void LoginMiClaro(String Email, String Password)
 	{
 		System.out.println("Test 3");
-		/*
-		 * driver.findElementByXPath("//android.widget.Button[1]").click(); driver.
-		 * findElementByXPath("//android.widget.EditText[@text='Correo Electrónico']").
-		 * sendKeys(Email);
-		 * driver.findElementByXPath("//android.widget.EditText[@text='Contraseña']").
-		 * sendKeys(Password);
-		 * 
-		 * driver.findElementByXPath("//android.widget.Button[@text='Ingresar']").click(
-		 * );
-		 */
+		
+		  Android.findElementByXPath("//android.widget.Button[1]").click();
+		  Android.findElementByXPath("//android.widget.EditText[@text='Correo Electrónico']").
+		  sendKeys(Email);
+		  Android.findElementByXPath("//android.widget.EditText[@text='Contraseña']").
+		  sendKeys(Password);
+		  
+		  Android.findElementByXPath("//android.widget.Button[@text='Ingresar']").click(
+		  );
+		 
 		
 	}
 }

@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [MiClaro]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="PoliticasAcceso(failed)">
+  <test thread-count="5" name="NI(failed)">
+    <parameter name="XpathPoliticasBAccepta" value="//android.widget.Button[@text=&#039;Aceptar&#039;]"/>
+    <parameter name="XpathPoliticaBtnPermitir" value="//android.widget.Button[@text=&#039;PERMITIR&#039;]"/>
+    <parameter name="XpathPoliticasUsoDatos" value="//android.widget.TextView[@text=&#039;Política de uso de Datos&#039;]"/>
     <parameter name="password" value="Eloyscar4"/>
+    <parameter name="XpathUbicacionCombo" value="com.claro.miclaro:id/txv_country_name"/>
+    <parameter name="XpathUbicacionComboSeleccionaNic" value="//android.widget.TextView[@text=&#039;Nicaragua&#039;]"/>
+    <parameter name="XpathUbicacionButtonConfirmar" value="//android.widget.Button[@text=&#039;Confirmar&#039;]"/>
+    <parameter name="xpathEmailPrinc" value="//android.widget.EditText[@text=&#039;Correo Electrónico&#039;]"/>
+    <parameter name="XpathPoliticaExistBPermitir" value="//android.widget.Button[@text=&#039;PERMITIR&#039;]"/>
     <parameter name="email" value="scarmelendez@gmail.com"/>
     <classes>
       <class name="test.Login">
@@ -12,14 +20,6 @@
           <include name="LoginMiClaro" invocation-numbers="0"/>
         </methods>
       </class> <!-- test.Login -->
-      <class name="test.OnBoarding">
-        <methods>
-          <include name="TearDown"/>
-          <include name="SetUp"/>
-          <include name="Ubicacion"/>
-          <include name="PoliticasAcceso"/>
-        </methods>
-      </class> <!-- test.OnBoarding -->
     </classes>
-  </test> <!-- PoliticasAcceso(failed) -->
+  </test> <!-- NI(failed) -->
 </suite> <!-- Failed suite [MiClaro] -->
