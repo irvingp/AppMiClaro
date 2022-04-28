@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+Gt - aguilar.luzma@gmail.com     	Claro2024
+NI - scarmelendez@gmail.com			Eloyscar5
+SV - reneherrerasv@gmail.com    	Claro2021
+CR - clarovideoprueba078@GMAIL.COM 	Claro+2022
+HN - pruebasvahn@gmail.com			Claro12345
+PA - miclarowebp1@gmail.com     	ClaroDr1v
+
+
+	 <parameter name="email" value="scarmelendez@gmail.com"/>
+	 <parameter name="password" value="Eloyscar5"/>
+	 
+	 <parameter name="puUbicacionTitle" value="Ubicación"/>
+	 <parameter name="puUbicacion" value="Se utiliza para mostrar contenido/campañas y sucursales con base a la localidad del dispositivo."/>
+	 <parameter name="puUsuarioTitle" value="Usuario"></parameter>
+	 <parameter name="puUsuario" value="Se utiliza para dar ayuda y soporte, permitir la compra paquetes y emitir encuestas de satisfacción."/>
+	 <parameter name="puNuTeleTitle" value="Número de teléfono"/>
+	 <parameter name="puNuTelefono" value="Este permiso es obligatorio y se utiliza para conocer el perfil de la línea y ofrecer contenido diferenciado. Adicional se utiliza para personalizar la aplicación acorde al país de consulta."/>
+	 <parameter name="puSistemaTitle" value="Sistema Operativo"/>
+	 <parameter name="puSistema" value="Se utiliza para conocer la compatibilidad de la aplicación en el dispositivo y configuraciones como fecha y hora."/>
+	 <parameter name="puDatosTitle" value="Datos de uso"/>
+	 <parameter name="puDatos" value="Se utiliza para dar a conocer la versión de la aplicación, informar errores y características generales de la misma con el fin de ofrecer contenido de acuerdo con los intereses del usuario."/>
+	 
+	<parameter name="OnboardingOne" value="Revisa y gestiona todos tus servicios Claro"/>
+	<parameter name="OnboardingTwo" value="Elige el servicio que quieres revisar haciendo clic en la parte superior de tu pantalla"/>
+	<parameter name="OnboardingThree" value="Conoce los consumos de tus paquetes de datos, minutos, mensajes y servicios disponibles"/>
+	<parameter name="OnBoardingFour" value="Consulta tus facturas, saldos y fechas de pago, compra paquetes y recargas desde el botón en el menú superior"/>
+	<parameter name="OnboardingFive" value="Recibe Soporte por nuestros diferentes Canales a través de nuestro botón de Ayuda"/>
+	
+	<parameter name="TextTitleDigitalInvoiceActivation" value="Suscripción a Factura Digital"/>
+	<parameter name="TextSubtitleDigitalInvoceActivation" value="¡Cuida el medio ambiente! y suscríbete a recibir tu factura mediante correo electrónico."/>
+	<parameter name="TextButtonSucribeInvoice" value="Suscribirme"/>
+	
+</data>

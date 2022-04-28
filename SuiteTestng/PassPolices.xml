@@ -1,0 +1,61 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Politicas_Google" verbose="1">
+
+	<test name="Polices">
+		<classes>
+			<class name="test.Polices">
+			</class>
+		</classes>
+	</test>
+	<test name="PassPolices">		
+		<classes>
+			<class name="test.PassPolices">
+				<methods>
+					<include name="SkipePolices"></include>
+					<include name="AcceptaPermiso" />
+					<exclude name="AceptaPoliticasdeUso"></exclude>
+				</methods>
+			</class>
+		</classes>		
+	</test>
+	<test name="CountrySelect">
+		<classes>
+			<class name="test.CountrySelect"></class> 
+		</classes>
+	</test>
+	
+	<test name="PassWelcomeIntro">
+		<classes>
+			<class name="test.PassWelcomeIntro"></class>
+		</classes>		
+	</test>
+	<test name="Login">
+		<classes>
+			<class name="test.Login"></class>
+		</classes>
+	</test>
+	<test name="ChatBotPolicesHelp">
+		<classes>
+			<class name="test.ChatBotPolicesHelp"></class>
+		</classes>
+	</test>
+	<test name="PassPolices2">		
+		<classes>
+			<class name="test.PassPolices">
+				<methods>
+					<include name="SkipePolices"></include>
+					<exclude name="AcceptaPermiso" />
+					<exclude name="AceptaPoliticasdeUso"></exclude>
+				</methods>
+			</class>
+		</classes>		
+	</test>
+	<test name="ChatBotPolicesPayments">
+		<classes>
+			<class name="test.ChatBotPolicesPayments"></class> 
+		</classes>
+	</test>
+	
+	
+
+</suite>

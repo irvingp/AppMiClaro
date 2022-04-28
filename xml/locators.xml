@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<locators>
+	
+	<!--Pais a probar -->	
+	<parameter name="country" value = "//android.widget.TextView[@text='Nicaragua']"/>
+	
+
+	<parameter name="XpathPoliticasUsoDatos" value="//android.widget.TextView[@text='Política de uso de Datos']"/>
+	<parameter name="XpathPoliticasBAccepta" value="//android.widget.Button[@text='Aceptar']"/>
+	<parameter name="XpathPoliticaBtnPermitir" value="//android.widget.Button[@text='PERMITIR']"/>
+	
+	<parameter name="xpathEmailPrinc" value="//android.widget.EditText[@text='Correo Electrónico']"/> 
+	<parameter name="XpathUbicacionCombo" value="com.claro.miclaro:id/txv_country_name"></parameter>
+	<parameter name="XpathUbicacionButtonConfirmar" value="//android.widget.Button[@text='Confirmar']"/>
+	
+	
+	
+	<parameter name="puIdTitle" value="com.claro.miclaro:id/policy_title"/>
+	<parameter name="puIdDescription" value="com.claro.miclaro:id/policy_title"/>
+	<parameter name="puXpathUbicacionTitle" value="//android.widget.TextView[@text='Ubicación']"/>
+	<parameter name="puXpathUbicacionDescription" value="//android.widget.TextView[@text='Se utiliza para mostrar contenido/campañas y sucursales con base a la localidad del dispositivo.']"/>
+	<parameter name="puXpathUsuarioTitle" value="//android.widget.TextView[@text='Usuario']"/>
+	<parameter name="puXpathUsuarioDescription" value= "//android.widget.TextView[@text='Se utiliza para dar ayuda y soporte, permitir la compra paquetes y emitir encuestas de satisfacción.']"/>
+	<parameter name="puXpathNumTeleTitle" value="//android.widget.TextView[@text='Número de teléfono']"/>
+	<parameter name="puXpathNumTeleDescription" value="//android.widget.TextView[@text='Este permiso es obligatorio y se utiliza para conocer el perfil de la línea y ofrecer contenido diferenciado. Adicional se utiliza para personalizar la aplicación acorde al país de consulta.']"/>
+	<parameter name="puXpathSisOpTitle" value="//android.widget.TextView[@text='Sistema Operativo']"/>
+	<parameter name="puXpathSisOpDescription" value="//android.widget.TextView[@text='Se utiliza para conocer la compatibilidad de la aplicación en el dispositivo y configuraciones como fecha y hora.']"/>
+	<parameter name="puXpathDataUsTitle" value="//android.widget.TextView[@text='Datos de uso']"/>
+	<parameter name="puXpathDataUsDescription" value="//android.widget.TextView[@text='Se utiliza para dar a conocer la versión de la aplicación, informar errores y características generales de la misma con el fin de ofrecer contenido de acuerdo con los intereses del usuario']"/>
+	<parameter name="puAcceptButton" value="//android.widget.Button[@text='Aceptar']" />
+	<parameter name="puSkipePolices" value="//android.widget.TextView[@text='En otro momento']"/>
+	
+	<parameter name="t2OXpathFormUbicacion" value="//android.widget.TextView[@text='Ubicación']"/>
+	<parameter name="t2OIdComboPaises" value="com.claro.miclaro:id/txv_country_name"/>
+	<parameter name="t2OBtnConfirmar" value="//android.widget.Button[@text='Confirmar']"/>
+	<parameter name="t2OXpathComboPaisSelect" value="//android.widget.LinearLayout[4]/android.widget.TextView[@text='Nicaragua']"/>
+	
+	<parameter name="t3XpathIniciaSesion" value="//android.widget.TextView[@text='Iniciar Sesión']"/>
+	<parameter name="t3XpathCorreo" value="//android.widget.EditText[@text='Correo Electrónico']"/>
+	<parameter name="t3XpathPassword" value="//android.widget.EditText[@text='Contraseña']"/>
+	<parameter name="t3XpathButtonAccep" value="//android.widget.Button[@text='Ingresar']"/>
+	
+	<parameter name="t4XpathButtonHelp" value="//android.widget.FrameLayout[@content-desc='Ayuda']/android.view.ViewGroup/android.widget.TextView"/>
+	<parameter name="t4IdChatBot" value="com.claro.miclaro:id/tvInitChat"/>
+	
+	<parameter name="t5XpathPagos" value="//android.widget.FrameLayout[@content-desc='Pagos']"></parameter>
+	<parameter name="t5XpathScrollView" value="/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ScrollView/android.view.ViewGroup/android.widget.FrameLayout[2]/android.view.ViewGroup/android.view.ViewGroup/android.widget.HorizontalScrollView"/>
+	<parameter name="t5XpathCompraPaquetes" value="com.claro.miclaro:id/tvBuyBagsTitle"/>
+	<parameter name="t5XpathButtonCancelar" value="//android.widget.Button[@text='Cancelar']"/>
+	
+	<parameter name="t6IdSkipIntro" value="com.claro.miclaro:id/lblWelcomeSkipIntro"></parameter>
+	
+	<parameter name="t7OnboardingButtonContinue" value="com.claro.miclaro:id/lblWelcomeContinuar"/>
+	
+	<parameter name="t8XpathButtonTuorial" value="//android.widget.TextView[@text='Tutorial']"/>
+	<parameter name="t8XpathTextOnBoarding" value="//android.widget.LinearLayout/android.widget.TextView"/>
+	
+	<parameter name="t9ButtonMenuPagos" value="//android.widget.FrameLayout[@content-desc='Pagos']/android.widget.FrameLayout/android.widget.ImageView"/>
+	<parameter name="t9ArrowButton" value="//android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.widget.ImageView[2]"/>	
+	<!--/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[3]/android.widget.TextView[2]-->
+	<parameter name="t9XpathMiFactura" value="//android.widget.TextView[@text='Mi Factura']"/>
+	<parameter name="t9IdBalancesTitle" value="com.claro.miclaro:id/balancesTitle"/>
+	
+	<parameter name="t10IdTitleActivateSubscriptionDigitalInvoice" value="com.claro.miclaro:id/tvsuscriTitle"/>
+	<parameter name="t10IdSubtitleActivateSubscriptionDigitalInvoice" value="com.claro.miclaro:id/tvsuscriSubtitle"/>
+	<parameter name="t10IdBtnSubcribeDigitalInvoice" value="com.claro.miclaro:id/btnSuscribirme"/>
+	
+
+</locators>

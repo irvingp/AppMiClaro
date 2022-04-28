@@ -8,64 +8,29 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">MiClaro</th></tr>
-<tr><td><a href="#t0">NI</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">1</td><td class="num">842,452</td><td></td><td></td></tr>
+<tr><th colspan="7">Invoice</th></tr>
+<tr><td><a href="#t0">PassPolices</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">3,606</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">CountrySelect</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">6,021</td><td></td><td></td></tr>
+<tr><td><a href="#t2">PassWelcomeIntro</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">5,396</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t3">Login</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">7,441</td><td></td><td></td></tr>
+<tr><td><a href="#t4">PrePaymentInvoice</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">31,373</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t5">ActivateDigitalInvoice</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">28,446</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">8</th><th class="num">0</th><th class="num">0</th><th class="num">82,283</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">MiClaro</th></tr></tbody><tbody id="t0"><tr><th colspan="4">NI &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="2">test.OnBoarding</td><td><a href="#m0">AfterTestPoliticas</a></td><td rowspan="1">1648077443389</td><td rowspan="1">10362</td></tr><tr class="failedeven"><td><a href="#m1">TearDown</a></td><td rowspan="1">1648078185472</td><td rowspan="1">88</td></tr><tr><th colspan="4">NI &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">test.Login</td><td><a href="#m2">LoginMiClaro</a></td><td rowspan="1">1648078173703</td><td rowspan="1">5020</td></tr><tr><th colspan="4">NI &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">test.OnBoarding</td><td><a href="#m3">PoliticasAcceso</a></td><td rowspan="1">1648077339568</td><td rowspan="1">103786</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Invoice</th></tr></tbody><tbody id="t0"><tr><th colspan="4">PassPolices &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">test.PassPolices</td><td><a href="#m0">AcceptaPermiso</a></td><td rowspan="1">1651162661077</td><td rowspan="1">2760</td></tr><tr class="passedeven"><td><a href="#m1">AceptaPoliticasdeUso</a></td><td rowspan="1">1651162660478</td><td rowspan="1">398</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">CountrySelect &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">test.CountrySelect</td><td><a href="#m2">Ubicacion</a></td><td rowspan="1">1651162663937</td><td rowspan="1">5959</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">PassWelcomeIntro &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">test.PassWelcomeIntro</td><td><a href="#m3">Ubicacion</a></td><td rowspan="1">1651162669935</td><td rowspan="1">5357</td></tr></tbody>
+<tbody id="t3"><tr><th colspan="4">Login &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">test.Login</td><td><a href="#m4">LoginMiClaro</a></td><td rowspan="1">1651162675367</td><td rowspan="1">7376</td></tr></tbody>
+<tbody id="t4"><tr><th colspan="4">PrePaymentInvoice &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">test.PrepaymentInvoice</td><td><a href="#m5">CheckPrepaymentsInvoice</a></td><td rowspan="1">1651162682798</td><td rowspan="1">31327</td></tr></tbody>
+<tbody id="t5"><tr><th colspan="4">ActivateDigitalInvoice &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">test.ActivateDigitalInvoice</td><td><a href="#m6">CheckDigitalInvoiceActivation</a></td><td rowspan="1">1651162720904</td><td rowspan="1">21678</td></tr><tr class="passedeven"><td><a href="#m7">NavigateToInvoiceSubscription</a></td><td rowspan="1">1651162714172</td><td rowspan="1">6684</td></tr></tbody>
 </table>
-<h2>NI</h2><h3 id="m0">test.OnBoarding#AfterTestPoliticas</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;MA-FON-009-N048&apos;, ip: &apos;192.168.1.26&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appActivity: com.claro.miclaro.view.Spla..., appPackage: com.claro.miclaro, automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: com.claro.miclaro.view.Spla..., appPackage: com.claro.miclaro, automationName: UiAutomator2, deviceName: Redmi Note 9, newCommandTimeout: 60, platformName: android, platformVersion: 11 RP1A.200720.011, udid: 059297700405}, deviceApiLevel: 30, deviceManufacturer: Xiaomi, deviceModel: M2003J15SC, deviceName: 059297700405, deviceScreenDensity: 440, deviceScreenSize: 1080x2340, deviceUDID: 059297700405, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 60, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 100, takesScreenshot: true, udid: 059297700405, viewportRect: {height: 2010, left: 0, top: 100, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: b9b825af-827b-4731-ad85-297f99428ad8
-*** Element info: {Using=xpath, value=//android.widget.Button[@text=&apos;PERMITIR&apos;]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:152)
-	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at test.OnBoarding.AfterTestPoliticas(OnBoarding.java:37)
-... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">test.OnBoarding#TearDown</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.UnsupportedCommandException: The requested resource could not be found, or a request was received using an HTTP method that is not supported by the mapped resource
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;MA-FON-009-N048&apos;, ip: &apos;192.168.1.26&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appActivity: com.claro.miclaro.view.Spla..., appPackage: com.claro.miclaro, automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: com.claro.miclaro.view.Spla..., appPackage: com.claro.miclaro, automationName: UiAutomator2, deviceName: Redmi Note 9, newCommandTimeout: 60, platformName: android, platformVersion: 11 RP1A.200720.011, udid: 059297700405}, deviceApiLevel: 30, deviceManufacturer: Xiaomi, deviceModel: M2003J15SC, deviceName: 059297700405, deviceScreenDensity: 440, deviceScreenSize: 1080x2340, deviceUDID: 059297700405, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 60, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 100, takesScreenshot: true, udid: 059297700405, viewportRect: {height: 2010, left: 0, top: 100, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: b9b825af-827b-4731-ad85-297f99428ad8
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:46)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:442)
-	at test.BaseClass.TearDown(BaseClass.java:80)
-... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">test.Login#LoginMiClaro</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>scarmelendez@gmail.com</td><td>Eloyscar4</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;io.appium.java_client.android.AndroidDriver.findElementByXPath(String)&quot; because &quot;this.Android&quot; is null
-	at test.Login.LoginMiClaro(Login.java:29)
-... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">test.OnBoarding#PoliticasAcceso</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>//android.widget.TextView[@text=&apos;Política de uso de Datos&apos;]</td><td>//android.widget.Button[@text=&apos;Aceptar&apos;]</td><td>//android.widget.Button[@text=&apos;PERMITIR&apos;]</td><td>//android.widget.Button[@text=&apos;PERMITIR&apos;]</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>PassPolices</h2><h3 id="m0">test.PassPolices#AcceptaPermiso</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>//android.widget.Button[@text=&apos;PERMITIR&apos;]</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">test.PassPolices#AceptaPoliticasdeUso</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>//android.widget.Button[@text=&apos;Aceptar&apos;]</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>CountrySelect</h2><h3 id="m2">test.CountrySelect#Ubicacion</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>//android.widget.TextView[@text=&apos;Ubicación&apos;]</td><td>com.claro.miclaro:id/txv_country_name</td><td>//android.widget.Button[@text=&apos;Confirmar&apos;]</td><td>//android.widget.TextView[@text=&apos;Nicaragua&apos;]</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>PassWelcomeIntro</h2><h3 id="m3">test.PassWelcomeIntro#Ubicacion</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>com.claro.miclaro:id/lblWelcomeSkipIntro</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Login</h2><h3 id="m4">test.Login#LoginMiClaro</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th></tr><tr class="param stripe"><td>scarmelendez@gmail.com</td><td>Eloyscar5</td><td>//android.widget.TextView[@text=&apos;Iniciar Sesión&apos;]</td><td>//android.widget.EditText[@text=&apos;Correo Electrónico&apos;]</td><td>//android.widget.EditText[@text=&apos;Contraseña&apos;]</td><td>//android.widget.Button[@text=&apos;Ingresar&apos;]</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>PrePaymentInvoice</h2><h3 id="m5">test.PrepaymentInvoice#CheckPrepaymentsInvoice</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>//android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.widget.ImageView[2]</td><td>//android.widget.FrameLayout[@content-desc=&apos;Pagos&apos;]/android.widget.FrameLayout/android.widget.ImageView</td><td>//android.widget.TextView[@text=&apos;Mi Factura&apos;]</td><td>com.claro.miclaro:id/balancesTitle</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>ActivateDigitalInvoice</h2><h3 id="m6">test.ActivateDigitalInvoice#CheckDigitalInvoiceActivation</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th></tr><tr class="param stripe"><td>com.claro.miclaro:id/tvsuscriTitle</td><td>com.claro.miclaro:id/tvsuscriSubtitle</td><td>com.claro.miclaro:id/btnSuscribirme</td><td>Suscripción a Factura Digital</td><td>¡Cuida el medio ambiente! y suscríbete a recibir tu factura mediante correo electrónico.</td><td>Suscribirme</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">test.ActivateDigitalInvoice#NavigateToInvoiceSubscription</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>//android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.widget.ImageView[2]</td><td>//android.widget.FrameLayout[@content-desc=&apos;Pagos&apos;]/android.widget.FrameLayout/android.widget.ImageView</td><td>//android.widget.TextView[@text=&apos;Mi Factura&apos;]</td><td>com.claro.miclaro:id/tvsuscriTitle</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

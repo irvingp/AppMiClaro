@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Onboarding]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="PrePaymentInvoice(failed)">
+    <classes>
+      <class name="test.PrepaymentInvoice">
+        <methods>
+          <include name="CheckPrepaymentsInvoice" invocation-numbers="0"/>
+          <include name="afterMethod"/>
+          <include name="TearDown"/>
+          <include name="SetUp"/>
+        </methods>
+      </class> <!-- test.PrepaymentInvoice -->
+    </classes>
+  </test> <!-- PrePaymentInvoice(failed) -->
+  <test thread-count="5" name="ActivateDigitalInvoice(failed)">
+    <classes>
+      <class name="test.ActivateDigitalInvoice">
+        <methods>
+          <include name="CheckDigitalInvoiceActivation"/>
+          <include name="afterMethod"/>
+          <include name="TearDown"/>
+          <include name="SetUp"/>
+          <include name="init"/>
+          <include name="NavigateToInvoiceSubscription" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- test.ActivateDigitalInvoice -->
+    </classes>
+  </test> <!-- ActivateDigitalInvoice(failed) -->
+</suite> <!-- Failed suite [Onboarding] -->

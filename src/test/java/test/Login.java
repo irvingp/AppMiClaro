@@ -1,7 +1,11 @@
 package test;
 
-import org.testng.annotations.BeforeGroups;
+import java.io.IOException;
+
+
 import org.testng.annotations.Test;
+
+import com.relevantcodes.extentreports.LogStatus;
 
 import providers.LoginProvider;
 
@@ -13,27 +17,19 @@ import providers.LoginProvider;
  */
 public class Login extends BaseClass{
 	
-	@BeforeGroups(groups ="Login-1")
-	public void ExistForm()
-	{
-		System.out.println("Before test 3");
-		//WaitToClik("//android.widget.Button[1]", 5);
-	}
+	
 
-	//@Parameters({"email","password"})
-	@Test(priority=3, groups = {"Login-1"}, dataProvider = "DataLogin", dataProviderClass = LoginProvider.class)
-	public void LoginMiClaro(String Email, String Password)
+	@Test(priority=1, groups = "Login", dataProvider = "DataLogin", dataProviderClass = LoginProvider.class, alwaysRun = true)
+	public void LoginMiClaro(String Email, String Password, String XpathInicioSesion, String XpathEmail, String XpathPassword, String XpathBtnAccep) throws InterruptedException, IOException
 	{
-		System.out.println("Test 3");
-		
-		  Android.findElementByXPath("//android.widget.Button[1]").click();
-		  Android.findElementByXPath("//android.widget.EditText[@text='Correo Electrónico']").
-		  sendKeys(Email);
-		  Android.findElementByXPath("//android.widget.EditText[@text='Contraseña']").
-		  sendKeys(Password);
-		  
-		  Android.findElementByXPath("//android.widget.Button[@text='Ingresar']").click(
-		  );
+		 test = report.startTest("Login","Inicio de sesión");
+		 WaitToClik(Android,XpathInicioSesion, 10);
+		  test.log(LogStatus.INFO, "Insertar datos de acceso.");
+		  Android.findElementByXPath(XpathEmail).sendKeys(Email);
+		  Android.findElementByXPath(XpathPassword).sendKeys(Password);		
+		  time.sleep(2);
+		  TakeScreenShot("Login_1");
+		  Android.findElementByXPath(XpathBtnAccep).click();
 		 
 		
 	}

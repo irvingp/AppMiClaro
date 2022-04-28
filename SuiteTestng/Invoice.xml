@@ -1,0 +1,44 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Invoice" verbose="1">
+	<test name="PassPolices">		
+		<classes>
+			<class name="test.PassPolices">
+				<methods>
+					<exclude name="SkipePolices"></exclude>
+					<include name="AcceptaPermiso" />
+					<include name="AceptaPoliticasdeUso"></include>
+				</methods>
+			</class>
+		</classes>		
+	</test>
+	<test name="CountrySelect">
+		<classes>
+			<class name="test.CountrySelect"></class> 
+		</classes>
+	</test>
+	
+	<test name="PassWelcomeIntro">
+		<classes>
+			<class name="test.PassWelcomeIntro"></class>
+		</classes>		
+	</test>
+	<test name="Login">
+		<classes>
+			<class name="test.Login"></class>
+		</classes>
+	</test>
+	
+	<test name="PrePaymentInvoice">
+		<classes>
+			<class name="test.PrepaymentInvoice"></class>
+		</classes>
+	</test>
+	<test name="ActivateDigitalInvoice">
+		<classes>
+			<class name="test.ActivateDigitalInvoice"></class>
+		</classes>
+	</test>
+	
+	
+
+</suite>

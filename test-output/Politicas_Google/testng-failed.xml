@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Politicas_Google]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Polices(failed)">
+    <classes>
+      <class name="test.Polices">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="TearDown"/>
+          <include name="PermisoDatosdeUsoDescription" invocation-numbers="0"/>
+          <include name="SetUp"/>
+          <include name="Init"/>
+        </methods>
+      </class> <!-- test.Polices -->
+    </classes>
+  </test> <!-- Polices(failed) -->
+  <test thread-count="5" name="ChatBotPolicesPayments(failed)">
+    <classes>
+      <class name="test.ChatBotPolicesPayments">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="FindChatBotPayments" invocation-numbers="0"/>
+          <include name="TearDown"/>
+          <include name="SetUp"/>
+        </methods>
+      </class> <!-- test.ChatBotPolicesPayments -->
+    </classes>
+  </test> <!-- ChatBotPolicesPayments(failed) -->
+</suite> <!-- Failed suite [Politicas_Google] -->

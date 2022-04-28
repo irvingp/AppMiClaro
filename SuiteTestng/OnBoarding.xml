@@ -1,0 +1,38 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Onboarding" verbose="1">
+	<test name="PassPolices">		
+		<classes>
+			<class name="test.PassPolices">
+				<methods>
+					<exclude name="SkipePolices"></exclude>
+					<include name="AcceptaPermiso" />
+					<include name="AceptaPoliticasdeUso"></include>
+				</methods>
+			</class>
+		</classes>		
+	</test>
+	<test name="CountrySelect">
+		<classes>
+			<class name="test.CountrySelect"></class> 
+		</classes>
+	</test>
+	
+	<test name="WelcomeIntro">
+		<classes>
+			<class name="test.WelComeIntro"></class>
+		</classes>		
+	</test>
+	<test name="Login">
+		<classes>
+			<class name="test.Login"></class>
+		</classes>
+	</test>
+	<test name="HelpTutorial">
+		<classes>
+			<class name="test.HelpTutorial"/>
+		</classes>
+	</test>
+	
+	
+
+</suite>

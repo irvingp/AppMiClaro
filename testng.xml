@@ -1,40 +1,41 @@
 
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="MiClaro" verbose="1" >
+<suite name="MiClaro" verbose="1">
 
 
-<test name="NI" >
+	<test name="Onboarding">
+	
+		<!-- parametros de inicio de sesión -->
+		<groups>
+			<dependencies>
+				<group name="PassPolices" depends-on="Onboarding" />
+				<group name="Country" depends-on="PassPolices"></group>
+				<group name="PassIntro" depends-on="Country"></group>
+				<group depends-on="PassIntro" name="Login"></group>
+				<group depends-on="Login" name="ChatBotPayments"></group>
+				<group depends-on="ChatBotPayments" name="ChatBotHelp"></group>
+			</dependencies>
+		</groups>
 
 
-<!-- Datos -->
+		<classes>
+			<class name="test.OnBoarding">
+			</class>
+			<class name="test.PassPolices">
+				<methods>
+					<include name="SkipePolices"></include>
+					<include name="AcceptaPermiso" />
+					<exclude name="AceptaPoliticasdeUso"></exclude>
+				</methods>
+			</class>
+ 			<class name="test.CountrySelect"></class> 
+			<class name="test.PassWelcomeIntro"></class>
+			<class name="test.Login"></class>
+			<class name="test.ChatBotPolicesPayments"></class> 
+ 			<class name="test.ChatBotPolicesHelp"></class>
+		</classes>
 
- <parameter name="email" value="scarmelendez@gmail.com"/>
- <parameter name="password" value="Eloyscar4"/>
- 
-<!--  Localizadores -->
-<parameter name="XpathPoliticasUsoDatos" value="//android.widget.TextView[@text='Política de uso de Datos']"/>
-<parameter name="XpathPoliticasBAccepta" value="//android.widget.Button[@text='Aceptar']"/>
-<parameter name="XpathPoliticaBtnPermitir" value="//android.widget.Button[@text='PERMITIR']"/>
+	</test>
 
- <parameter name="xpathEmailPrinc" value="//android.widget.EditText[@text='Correo Electrónico']"/> 
- <parameter name="XpathUbicacionCombo" value="com.claro.miclaro:id/txv_country_name"></parameter>
- <parameter name="XpathUbicacionComboSeleccionaNic" value = "//android.widget.TextView[@text='Nicaragua']"/>
- <parameter name="XpathUbicacionButtonConfirmar" value="//android.widget.Button[@text='Confirmar']"/>
 
-<classes>
-	<class name="test.OnBoarding">
-	 <methods>
-			<include name="PoliticasAcceso"/>	 
-			<include name="Ubicacion"/>
-	 </methods>
-	</class>
-	<class name="test.Login">
-		<methods>
-			<include name="LoginMiClaro"/>
-		</methods>
-	</class>
-</classes>
-
-</test>
- 
 </suite>

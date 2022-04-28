@@ -1,25 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [MiClaro]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="NI(failed)">
-    <parameter name="XpathPoliticasBAccepta" value="//android.widget.Button[@text=&#039;Aceptar&#039;]"/>
-    <parameter name="XpathPoliticaBtnPermitir" value="//android.widget.Button[@text=&#039;PERMITIR&#039;]"/>
-    <parameter name="XpathPoliticasUsoDatos" value="//android.widget.TextView[@text=&#039;Política de uso de Datos&#039;]"/>
-    <parameter name="password" value="Eloyscar4"/>
-    <parameter name="XpathUbicacionCombo" value="com.claro.miclaro:id/txv_country_name"/>
-    <parameter name="XpathUbicacionComboSeleccionaNic" value="//android.widget.TextView[@text=&#039;Nicaragua&#039;]"/>
-    <parameter name="XpathUbicacionButtonConfirmar" value="//android.widget.Button[@text=&#039;Confirmar&#039;]"/>
-    <parameter name="xpathEmailPrinc" value="//android.widget.EditText[@text=&#039;Correo Electrónico&#039;]"/>
-    <parameter name="XpathPoliticaExistBPermitir" value="//android.widget.Button[@text=&#039;PERMITIR&#039;]"/>
-    <parameter name="email" value="scarmelendez@gmail.com"/>
+  <test thread-count="5" name="Onboarding(failed)">
     <classes>
-      <class name="test.Login">
+      <class name="test.OnBoarding">
         <methods>
+          <include name="afterMethod"/>
+          <include name="Init"/>
           <include name="TearDown"/>
           <include name="SetUp"/>
-          <include name="LoginMiClaro" invocation-numbers="0"/>
+          <include name="PermisoDatosdeUsoDescription" invocation-numbers="0"/>
         </methods>
-      </class> <!-- test.Login -->
+      </class> <!-- test.OnBoarding -->
     </classes>
-  </test> <!-- NI(failed) -->
+  </test> <!-- Onboarding(failed) -->
+  <test thread-count="5" name="ChatBotPolicesPayments(failed)">
+    <classes>
+      <class name="test.ChatBotPolicesPayments">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="FindChatBotPayments" invocation-numbers="0"/>
+          <include name="TearDown"/>
+          <include name="SetUp"/>
+        </methods>
+      </class> <!-- test.ChatBotPolicesPayments -->
+    </classes>
+  </test> <!-- ChatBotPolicesPayments(failed) -->
 </suite> <!-- Failed suite [MiClaro] -->

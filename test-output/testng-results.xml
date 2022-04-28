@@ -1,40 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="4" passed="1" failed="1" skipped="0">
+<testng-results ignored="1" total="9" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-03-23T23:15:38Z" name="MiClaro" finished-at="2022-03-23T23:29:41Z" duration-ms="842452">
+  <suite started-at="2022-04-28T16:17:40Z" name="Invoice" finished-at="2022-04-28T16:19:02Z" duration-ms="82335">
     <groups>
-      <group name="Boarding-1">
-        <method signature="OnBoarding.PoliticasAcceso(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:test.OnBoarding@26abb146]" name="PoliticasAcceso" class="test.OnBoarding"/>
-      </group> <!-- Boarding-1 -->
-      <group name="Login-1">
-        <method signature="Login.LoginMiClaro(java.lang.String, java.lang.String)[pri:3, instance:test.Login@72c8e7b]" name="LoginMiClaro" class="test.Login"/>
-      </group> <!-- Login-1 -->
+      <group name="PassPolices">
+        <method signature="PassPolices.AcceptaPermiso(java.lang.String)[pri:3, instance:test.PassPolices@1be2019a]" name="AcceptaPermiso" class="test.PassPolices"/>
+        <method signature="PassPolices.AceptaPoliticasdeUso(java.lang.String)[pri:1, instance:test.PassPolices@1be2019a]" name="AceptaPoliticasdeUso" class="test.PassPolices"/>
+      </group> <!-- PassPolices -->
+      <group name="Country">
+        <method signature="CountrySelect.Ubicacion(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:test.CountrySelect@41330d4f]" name="Ubicacion" class="test.CountrySelect"/>
+      </group> <!-- Country -->
+      <group name="Login">
+        <method signature="Login.LoginMiClaro(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:test.Login@49c90a9c]" name="LoginMiClaro" class="test.Login"/>
+      </group> <!-- Login -->
+      <group name="PassIntro">
+        <method signature="PassWelcomeIntro.Ubicacion(java.lang.String)[pri:1, instance:test.PassWelcomeIntro@798162bc]" name="Ubicacion" class="test.PassWelcomeIntro"/>
+      </group> <!-- PassIntro -->
     </groups>
-    <test started-at="2022-03-23T23:15:38Z" name="NI" finished-at="2022-03-23T23:29:41Z" duration-ms="842452">
-      <class name="test.OnBoarding">
-        <test-method is-config="true" signature="SetUp()[pri:0, instance:test.OnBoarding@26abb146]" started-at="2022-03-23T23:15:30Z" name="SetUp" finished-at="2022-03-23T23:15:38Z" duration-ms="8463" status="PASS">
+    <test started-at="2022-04-28T16:17:40Z" name="PassPolices" finished-at="2022-04-28T16:17:43Z" duration-ms="3606">
+      <class name="test.PassPolices">
+        <test-method is-config="true" signature="Init()[pri:0, instance:test.PassPolices@1be2019a]" started-at="2022-04-28T16:17:40Z" name="Init" finished-at="2022-04-28T16:17:40Z" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SetUp -->
-        <test-method signature="PoliticasAcceso(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:test.OnBoarding@26abb146]" started-at="2022-03-23T23:15:39Z" name="PoliticasAcceso" data-provider="PoliticasAccesoProvider" finished-at="2022-03-23T23:17:23Z" duration-ms="103786" status="PASS">
+        </test-method> <!-- Init -->
+        <test-method signature="AceptaPoliticasdeUso(java.lang.String)[pri:1, instance:test.PassPolices@1be2019a]" started-at="2022-04-28T16:17:40Z" name="AceptaPoliticasdeUso" data-provider="AccepButttonProvider" finished-at="2022-04-28T16:17:40Z" duration-ms="398" status="PASS">
           <params>
             <param index="0">
-              <value>
-                <![CDATA[//android.widget.TextView[@text='Política de uso de Datos']]]>
-              </value>
-            </param>
-            <param index="1">
               <value>
                 <![CDATA[//android.widget.Button[@text='Aceptar']]]>
               </value>
             </param>
-            <param index="2">
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AceptaPoliticasdeUso -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.PassPolices@1be2019a]" started-at="2022-04-28T16:17:40Z" name="afterMethod" finished-at="2022-04-28T16:17:41Z" duration-ms="189" status="PASS">
+          <params>
+            <param index="0">
               <value>
-                <![CDATA[//android.widget.Button[@text='PERMITIR']]]>
+                <![CDATA[[TestResult name=AceptaPoliticasdeUso status=SUCCESS method=PassPolices.AceptaPoliticasdeUso(java.lang.String)[pri:1, instance:test.PassPolices@1be2019a] output={null}]]]>
               </value>
             </param>
-            <param index="3">
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="AcceptaPermiso(java.lang.String)[pri:3, instance:test.PassPolices@1be2019a]" started-at="2022-04-28T16:17:41Z" name="AcceptaPermiso" data-provider="AcceptPermissions" finished-at="2022-04-28T16:17:43Z" duration-ms="2760" status="PASS">
+          <params>
+            <param index="0">
               <value>
                 <![CDATA[//android.widget.Button[@text='PERMITIR']]]>
               </value>
@@ -42,158 +56,90 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- PoliticasAcceso -->
-        <test-method is-config="true" signature="AfterTestPoliticas()[pri:0, instance:test.OnBoarding@26abb146]" started-at="2022-03-23T23:17:23Z" name="AfterTestPoliticas" finished-at="2022-03-23T23:17:33Z" duration-ms="10362" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MA-FON-009-N048', ip: '192.168.1.26', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appActivity: com.claro.miclaro.view.Spla..., appPackage: com.claro.miclaro, automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: com.claro.miclaro.view.Spla..., appPackage: com.claro.miclaro, automationName: UiAutomator2, deviceName: Redmi Note 9, newCommandTimeout: 60, platformName: android, platformVersion: 11 RP1A.200720.011, udid: 059297700405}, deviceApiLevel: 30, deviceManufacturer: Xiaomi, deviceModel: M2003J15SC, deviceName: 059297700405, deviceScreenDensity: 440, deviceScreenSize: 1080x2340, deviceUDID: 059297700405, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 60, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 100, takesScreenshot: true, udid: 059297700405, viewportRect: {height: 2010, left: 0, top: 100, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: b9b825af-827b-4731-ad85-297f99428ad8
-*** Element info: {Using=xpath, value=//android.widget.Button[@text='PERMITIR']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MA-FON-009-N048', ip: '192.168.1.26', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appActivity: com.claro.miclaro.view.Spla..., appPackage: com.claro.miclaro, automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: com.claro.miclaro.view.Spla..., appPackage: com.claro.miclaro, automationName: UiAutomator2, deviceName: Redmi Note 9, newCommandTimeout: 60, platformName: android, platformVersion: 11 RP1A.200720.011, udid: 059297700405}, deviceApiLevel: 30, deviceManufacturer: Xiaomi, deviceModel: M2003J15SC, deviceName: 059297700405, deviceScreenDensity: 440, deviceScreenSize: 1080x2340, deviceUDID: 059297700405, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 60, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 100, takesScreenshot: true, udid: 059297700405, viewportRect: {height: 2010, left: 0, top: 100, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: b9b825af-827b-4731-ad85-297f99428ad8
-*** Element info: {Using=xpath, value=//android.widget.Button[@text='PERMITIR']}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
-at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
-at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:152)
-at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
-at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-at test.OnBoarding.AfterTestPoliticas(OnBoarding.java:37)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.internal.Invoker.invokeAfterGroupsConfigurations(Invoker.java:808)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:651)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        </test-method> <!-- AcceptaPermiso -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.PassPolices@1be2019a]" started-at="2022-04-28T16:17:43Z" name="afterMethod" finished-at="2022-04-28T16:17:43Z" duration-ms="34" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=AcceptaPermiso status=SUCCESS method=PassPolices.AcceptaPermiso(java.lang.String)[pri:3, instance:test.PassPolices@1be2019a] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AfterTestPoliticas -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:test.OnBoarding@26abb146]" started-at="2022-03-23T23:29:45Z" name="TearDown" finished-at="2022-03-23T23:29:45Z" duration-ms="88" status="FAIL">
-          <exception class="org.openqa.selenium.UnsupportedCommandException">
-            <message>
-              <![CDATA[The requested resource could not be found, or a request was received using an HTTP method that is not supported by the mapped resource
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MA-FON-009-N048', ip: '192.168.1.26', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appActivity: com.claro.miclaro.view.Spla..., appPackage: com.claro.miclaro, automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: com.claro.miclaro.view.Spla..., appPackage: com.claro.miclaro, automationName: UiAutomator2, deviceName: Redmi Note 9, newCommandTimeout: 60, platformName: android, platformVersion: 11 RP1A.200720.011, udid: 059297700405}, deviceApiLevel: 30, deviceManufacturer: Xiaomi, deviceModel: M2003J15SC, deviceName: 059297700405, deviceScreenDensity: 440, deviceScreenSize: 1080x2340, deviceUDID: 059297700405, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 60, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 100, takesScreenshot: true, udid: 059297700405, viewportRect: {height: 2010, left: 0, top: 100, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: b9b825af-827b-4731-ad85-297f99428ad8]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.UnsupportedCommandException: The requested resource could not be found, or a request was received using an HTTP method that is not supported by the mapped resource
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MA-FON-009-N048', ip: '192.168.1.26', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appActivity: com.claro.miclaro.view.Spla..., appPackage: com.claro.miclaro, automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: com.claro.miclaro.view.Spla..., appPackage: com.claro.miclaro, automationName: UiAutomator2, deviceName: Redmi Note 9, newCommandTimeout: 60, platformName: android, platformVersion: 11 RP1A.200720.011, udid: 059297700405}, deviceApiLevel: 30, deviceManufacturer: Xiaomi, deviceModel: M2003J15SC, deviceName: 059297700405, deviceScreenDensity: 440, deviceScreenSize: 1080x2340, deviceUDID: 059297700405, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 60, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 100, takesScreenshot: true, udid: 059297700405, viewportRect: {height: 2010, left: 0, top: 100, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: b9b825af-827b-4731-ad85-297f99428ad8
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:46)
-at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:442)
-at test.BaseClass.TearDown(BaseClass.java:80)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:425)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.UnsupportedCommandException -->
+        </test-method> <!-- afterMethod -->
+      </class> <!-- test.PassPolices -->
+    </test> <!-- PassPolices -->
+    <test started-at="2022-04-28T16:17:43Z" name="CountrySelect" finished-at="2022-04-28T16:17:49Z" duration-ms="6021">
+      <class name="test.CountrySelect">
+        <test-method signature="Ubicacion(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:test.CountrySelect@41330d4f]" started-at="2022-04-28T16:17:43Z" name="Ubicacion" data-provider="ActionsCountrySelectProvider" finished-at="2022-04-28T16:17:49Z" duration-ms="5959" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[//android.widget.TextView[@text='Ubicación']]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[com.claro.miclaro:id/txv_country_name]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[//android.widget.Button[@text='Confirmar']]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[//android.widget.TextView[@text='Nicaragua']]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TearDown -->
-      </class> <!-- test.OnBoarding -->
+        </test-method> <!-- Ubicacion -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.CountrySelect@41330d4f]" started-at="2022-04-28T16:17:49Z" name="afterMethod" finished-at="2022-04-28T16:17:49Z" duration-ms="25" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Ubicacion status=SUCCESS method=CountrySelect.Ubicacion(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:test.CountrySelect@41330d4f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- test.CountrySelect -->
+    </test> <!-- CountrySelect -->
+    <test started-at="2022-04-28T16:17:49Z" name="PassWelcomeIntro" finished-at="2022-04-28T16:17:55Z" duration-ms="5396">
+      <class name="test.PassWelcomeIntro">
+        <test-method signature="Ubicacion(java.lang.String)[pri:1, instance:test.PassWelcomeIntro@798162bc]" started-at="2022-04-28T16:17:49Z" name="Ubicacion" data-provider="SkipeIntroProvider" finished-at="2022-04-28T16:17:55Z" duration-ms="5357" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.claro.miclaro:id/lblWelcomeSkipIntro]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Ubicacion -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.PassWelcomeIntro@798162bc]" started-at="2022-04-28T16:17:55Z" name="afterMethod" finished-at="2022-04-28T16:17:55Z" duration-ms="31" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Ubicacion status=SUCCESS method=PassWelcomeIntro.Ubicacion(java.lang.String)[pri:1, instance:test.PassWelcomeIntro@798162bc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- test.PassWelcomeIntro -->
+    </test> <!-- PassWelcomeIntro -->
+    <test started-at="2022-04-28T16:17:55Z" name="Login" finished-at="2022-04-28T16:18:02Z" duration-ms="7441">
       <class name="test.Login">
-        <test-method is-config="true" signature="ExistForm()[pri:0, instance:test.Login@72c8e7b]" started-at="2022-03-23T23:29:33Z" name="ExistForm" finished-at="2022-03-23T23:29:33Z" duration-ms="6" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ExistForm -->
-        <test-method signature="LoginMiClaro(java.lang.String, java.lang.String)[pri:3, instance:test.Login@72c8e7b]" started-at="2022-03-23T23:29:33Z" name="LoginMiClaro" data-provider="DataLogin" finished-at="2022-03-23T23:29:38Z" duration-ms="5020" status="FAIL">
+        <test-method signature="LoginMiClaro(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:test.Login@49c90a9c]" started-at="2022-04-28T16:17:55Z" name="LoginMiClaro" data-provider="DataLogin" finished-at="2022-04-28T16:18:02Z" duration-ms="7376" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -202,49 +148,193 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </param>
             <param index="1">
               <value>
-                <![CDATA[Eloyscar4]]>
+                <![CDATA[Eloyscar5]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[//android.widget.TextView[@text='Iniciar Sesión']]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[//android.widget.EditText[@text='Correo Electrónico']]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[//android.widget.EditText[@text='Contraseña']]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[//android.widget.Button[@text='Ingresar']]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "io.appium.java_client.android.AndroidDriver.findElementByXPath(String)" because "this.Android" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "io.appium.java_client.android.AndroidDriver.findElementByXPath(String)" because "this.Android" is null
-at test.Login.LoginMiClaro(Login.java:29)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginMiClaro -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.Login@49c90a9c]" started-at="2022-04-28T16:18:02Z" name="afterMethod" finished-at="2022-04-28T16:18:02Z" duration-ms="28" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=LoginMiClaro status=SUCCESS method=Login.LoginMiClaro(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:test.Login@49c90a9c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
       </class> <!-- test.Login -->
-    </test> <!-- NI -->
-  </suite> <!-- MiClaro -->
+    </test> <!-- Login -->
+    <test started-at="2022-04-28T16:18:02Z" name="PrePaymentInvoice" finished-at="2022-04-28T16:18:34Z" duration-ms="31373">
+      <class name="test.PrepaymentInvoice">
+        <test-method signature="CheckPrepaymentsInvoice(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:test.PrepaymentInvoice@9816741]" started-at="2022-04-28T16:18:02Z" name="CheckPrepaymentsInvoice" data-provider="CheckPrepaymentsInvoiceProvider" finished-at="2022-04-28T16:18:34Z" duration-ms="31327" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[//android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.widget.ImageView[2]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[//android.widget.FrameLayout[@content-desc='Pagos']/android.widget.FrameLayout/android.widget.ImageView]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[//android.widget.TextView[@text='Mi Factura']]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[com.claro.miclaro:id/balancesTitle]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckPrepaymentsInvoice -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.PrepaymentInvoice@9816741]" started-at="2022-04-28T16:18:34Z" name="afterMethod" finished-at="2022-04-28T16:18:34Z" duration-ms="25" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=CheckPrepaymentsInvoice status=SUCCESS method=PrepaymentInvoice.CheckPrepaymentsInvoice(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:test.PrepaymentInvoice@9816741] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- test.PrepaymentInvoice -->
+    </test> <!-- PrePaymentInvoice -->
+    <test started-at="2022-04-28T16:18:34Z" name="ActivateDigitalInvoice" finished-at="2022-04-28T16:19:02Z" duration-ms="28446">
+      <class name="test.ActivateDigitalInvoice">
+        <test-method is-config="true" signature="SetUp(org.testng.ITestContext)[pri:0, instance:test.ActivateDigitalInvoice@7d322cad]" started-at="2022-04-28T16:17:31Z" name="SetUp" finished-at="2022-04-28T16:17:40Z" duration-ms="8697" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@44536de4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method is-config="true" signature="init()[pri:0, instance:test.ActivateDigitalInvoice@7d322cad]" started-at="2022-04-28T16:18:34Z" name="init" finished-at="2022-04-28T16:18:34Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="NavigateToInvoiceSubscription(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:test.ActivateDigitalInvoice@7d322cad]" started-at="2022-04-28T16:18:34Z" name="NavigateToInvoiceSubscription" data-provider="NavigateToInvoiceSubscriptionProvider" finished-at="2022-04-28T16:18:40Z" duration-ms="6684" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[//android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.widget.ImageView[2]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[//android.widget.FrameLayout[@content-desc='Pagos']/android.widget.FrameLayout/android.widget.ImageView]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[//android.widget.TextView[@text='Mi Factura']]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[com.claro.miclaro:id/tvsuscriTitle]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NavigateToInvoiceSubscription -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.ActivateDigitalInvoice@7d322cad]" started-at="2022-04-28T16:18:40Z" name="afterMethod" finished-at="2022-04-28T16:18:40Z" duration-ms="23" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=NavigateToInvoiceSubscription status=SUCCESS method=ActivateDigitalInvoice.NavigateToInvoiceSubscription(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:test.ActivateDigitalInvoice@7d322cad] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="CheckDigitalInvoiceActivation(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:test.ActivateDigitalInvoice@7d322cad]" started-at="2022-04-28T16:18:40Z" name="CheckDigitalInvoiceActivation" data-provider="CheckDigitalInvoiceActivationProvider" finished-at="2022-04-28T16:19:02Z" duration-ms="21678" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.claro.miclaro:id/tvsuscriTitle]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[com.claro.miclaro:id/tvsuscriSubtitle]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[com.claro.miclaro:id/btnSuscribirme]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Suscripción a Factura Digital]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[¡Cuida el medio ambiente! y suscríbete a recibir tu factura mediante correo electrónico.]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Suscribirme]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckDigitalInvoiceActivation -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.ActivateDigitalInvoice@7d322cad]" started-at="2022-04-28T16:19:02Z" name="afterMethod" finished-at="2022-04-28T16:19:02Z" duration-ms="18" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=CheckDigitalInvoiceActivation status=SUCCESS method=ActivateDigitalInvoice.CheckDigitalInvoiceActivation(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:test.ActivateDigitalInvoice@7d322cad] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:test.ActivateDigitalInvoice@7d322cad]" started-at="2022-04-28T16:19:02Z" name="TearDown" finished-at="2022-04-28T16:19:02Z" duration-ms="383" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- test.ActivateDigitalInvoice -->
+    </test> <!-- ActivateDigitalInvoice -->
+  </suite> <!-- Invoice -->
 </testng-results>

@@ -22,7 +22,15 @@ public class LoginProvider extends Provider {
 	@DataProvider(name = "DataLogin")
 	public static Object[][] DataLogin() throws JAXBException, FileNotFoundException, SAXException, ParserConfigurationException  {				
 	 return new Object[][] {
-	   {GetParamByName("email").getValue() ,GetParamByName("password").getValue()}
+	   {
+		   GetParamDataByName("email").getValue() ,
+		   GetParamDataByName("password").getValue(),
+		   GetParamLocatorsByName("t3XpathIniciaSesion").getValue(),
+		   GetParamLocatorsByName("t3XpathCorreo").getValue(),
+		   GetParamLocatorsByName("t3XpathPassword").getValue(),
+		   GetParamLocatorsByName("t3XpathButtonAccep").getValue()
+		   
+	   }
 	  
 	 };
 	}
